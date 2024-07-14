@@ -1,3 +1,21 @@
+document.getElementById('dialog').showModal();
+const dialog = document.getElementById('dialog');
+const inputPlayer1 = document.getElementById('player1');
+const inputPlayer2 = document.getElementById('player2');
+const startButton = document.getElementById('start');
+let player1 = 'Player 1';
+let player2 = 'Player 2';
+
+startButton.addEventListener('click', function () {
+    if (inputPlayer1.value !== '' && inputPlayer2.value !== '') {
+        player1 = inputPlayer1.value;
+        player2 = inputPlayer2.value;
+        dialog.close();
+    }
+});
+
+
+
 // tic tac toe game
 const gameBoard = function () {
 
@@ -48,6 +66,7 @@ const gameBoard = function () {
         }
         return draw;
     }
+
     function resetBoard() {
         board = [
             [0, 0, 0],
@@ -68,7 +87,13 @@ const gameBoard = function () {
         reset: function () {
             resetBoard();
         },
-        
+        checkWinner: function () {
+            return checkWinner(board);
+        },
+        checkDraw: function () {
+            return checkDraw();
+        },
+
     }
 
 
