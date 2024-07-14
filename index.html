@@ -8,21 +8,38 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <main>
-        <dialog id="dialog">
-            <h2>Tic Tac Toe</h2>
-            <form action="">
-                <formgroup>
-                    <label for="player1">Player 1:</label>
-                    <input type="text" id="player1" placeholder="Player 1">
-                </formgroup>
-                <formgroup>
-                    <label for="player2">Player 2:</label>
-                    <input type="text" id="player2" placeholder="Player 2"> 
-                </formgroup>
-            </form>
-            <button id="start" type="button">Start</button>
-        </dialog>
-    </main>
+
+    <h1>Tic Tac Toe</h1>
+
+    <div class="board">
+        <button class="cell"></button>
+        <button class="cell"></button>        
+        <button class="cell"></button>
+
+        <button class="cell"></button>        
+        <button class="cell"></button>
+        <button class="cell"></button>
+
+        <button class="cell"></button>
+        <button class="cell"></button>
+        <button class="cell"></button>
+
+    </div>
+
+    <dialog id="dialog">
+        <h2>Tic Tac Toe</h2>
+        <form action="POST" id="form">
+            <formgroup class="formgroup">
+                <label for="player1">Player 1:</label>
+                <input type="text" id="player1" placeholder="Player 1">
+            </formgroup>
+            <formgroup class="formgroup">
+                <label for="player2">Player 2:</label>
+                <input type="text" id="player2" placeholder="Player 2"> 
+            </formgroup>
+        </form>
+        <button id="start" type="button">Start</button>
+    </dialog>
+
 </body>
 </html>
