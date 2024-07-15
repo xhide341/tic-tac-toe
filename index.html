@@ -23,22 +23,47 @@
         <button class="cell"></button>
         <button class="cell"></button>
         <button class="cell"></button>
-
     </div>
 
-    <dialog id="dialog">
+    <div class="scores">
+        <div class="player1">
+            <span id="player1-name">Player 1<br>(X)</span>
+            <span class="player1-score">0</span>
+        </div>
+        <div class="left-line"></div>
+        <div class="tie-turn">
+            <span id="tie-turn-name">Tie</span>
+            <span class="tie-turn-score">0</span>
+        </div>
+        <div class="right-line"></div>
+        <div class="player2">
+            <span id="player2-name">Player 2<br>(O)</span>
+            <span class="player2-score">0</span>
+        </div>
+    </div>
+
+    <dialog id="start-dialog" class="start-dialog">
         <h2>Tic Tac Toe</h2>
         <form action="POST" id="form">
             <formgroup class="formgroup">
                 <label for="player1">Player 1:</label>
-                <input type="text" id="player1" placeholder="Player 1">
+                <input type="text" id="player1" placeholder="Player 1" min="0" max="10">
             </formgroup>
             <formgroup class="formgroup">
                 <label for="player2">Player 2:</label>
-                <input type="text" id="player2" placeholder="Player 2"> 
+                <input type="text" id="player2" placeholder="Player 2" min="0" max="10">
             </formgroup>
         </form>
         <button id="start" type="button">Start</button>
+    </dialog>
+
+    <dialog id="round-dialog" class="round-dialog">
+        <h2>Round 1</h2>
+        <h3 id="round-winner"></h3>
+        <div class="round-buttons">
+            <button id="new-game" type="button">New Game</button>
+            <button id="continue-game" type="button">Continue</button>
+        </div>
     </dialog>
 
 </body>
