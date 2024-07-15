@@ -20,9 +20,8 @@ const continueGameButton = document.getElementById('continue-game');
 const roundWinner = document.getElementById('round-winner');
 
 newGameButton.addEventListener('click', function() {
+    startDialog.showModal();
     roundDialog.close();
-    resetScores();
-    initializeGame();
 });
 
 continueGameButton.addEventListener('click', function() {
