@@ -46,7 +46,6 @@ body {
     height: 100vh;
 }
 
-
 h1 {
     font-size: 3rem;
     color: var(--secondary-color);
@@ -55,6 +54,7 @@ h1 {
     margin-top: 2rem;
 }
 
+
 .board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -62,12 +62,17 @@ h1 {
     width: 600px;
     height: 600px;
     margin: 20px auto;
+    border: 2px solid black;
+}
+
+.board,
+.scores,
+h1 {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    border: 1px solid black;
-}
+} 
 
 .cell {
     width: 100%;
@@ -75,6 +80,7 @@ h1 {
     background-color: var(--secondary-color);
     border: 1px solid black;
     transition: transform 0.1s ease, background-color 0.3s ease;
+    margin: 0;
 }
 
 .cell:hover {
