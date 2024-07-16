@@ -297,3 +297,28 @@ input:focus {
 #new-game {
     margin-right: 20px;
 }
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .cell {
+        font-size: 3rem;
+    }
+
+    .scores {
+        font-size: 1.5rem;
+        gap: 50px;
+    }
+
+    .player1-score,
+    .player2-score,
+    .tie-turn-score {
+        font-size: 4rem;
+    }
+
+    .round-buttons {
+        flex-direction: row;
+    }
+}
