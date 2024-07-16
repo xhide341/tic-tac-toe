@@ -35,7 +35,7 @@ body {
     --primary-color: #755139FF;
     --secondary-color: #F2EDD7FF;
     --input-background-color: #f6f6f9;
-    --hover-color: #f6f6f9;
+    --hover-color: rgb(87, 60, 42);
     --success-color: #28a745;
     --danger-color: #dc3545;
     font-family: 'Poppins', sans-serif;

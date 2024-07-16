@@ -134,6 +134,7 @@ const gameBoard = (function () {
 
     const announceDraw = () => {
         roundWinner.innerText = "It's a draw!";
+        tieTurnScore.innerText =  parseInt(tieTurnScore.innerText) + 1;
         resetBoard();
         roundDialog.showModal();
     };
