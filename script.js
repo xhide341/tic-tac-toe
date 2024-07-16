@@ -146,10 +146,7 @@ const gameBoard = (function () {
 
 })();
 
-
 startDialog.showModal();
-const player1 = 'x';
-const player2 = 'o';
 
 startButton.addEventListener('click', function() {
     if (inputPlayer1.value !== '' || inputPlayer2.value !== '') {
@@ -165,7 +162,6 @@ startButton.addEventListener('click', function() {
 });
 
 function initializeGame() {
-    // No need to reassign gameBoard, just reset it
     gameBoard.reset();
 }
 
