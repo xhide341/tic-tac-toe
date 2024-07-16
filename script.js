@@ -18,6 +18,7 @@ const tieTurnScore = document.querySelector('.tie-turn-score');
 const newGameButton = document.getElementById('new-game');
 const continueGameButton = document.getElementById('continue-game');
 const roundWinner = document.getElementById('round-winner');
+const roundNumber = document.getElementById('round-number');
 
 newGameButton.addEventListener('click', function() {
     startDialog.showModal();
@@ -129,12 +130,14 @@ const gameBoard = (function () {
         }
         resetBoard();
         roundWinner.innerText = `${winner === 'x' ? player1Name : player2Name} wins!`;
+        roundNumber.innerText = `Round ${roundNumber.innerText + 1}`;
         roundDialog.showModal();
     };
 
     const announceDraw = () => {
         roundWinner.innerText = "It's a draw!";
         tieTurnScore.innerText =  parseInt(tieTurnScore.innerText) + 1;
+        roundNumber = parseInt(roundNumber.innerText) + 1;
         resetBoard();
         roundDialog.showModal();
     };
