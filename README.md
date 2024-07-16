@@ -12,7 +12,7 @@ Mini-project for TOP's Vanilla Javascript course.
 
 ## About
 
-This project is about a basic Tic-Tac-Toe game that is implemented using vanilla Javascript. It is made by mainly using module pattern and the use of factory function to organize the code.
+This project is about a basic Tic-Tac-Toe game that is implemented using vanilla Javascript. It is made by mainly using module pattern to organize the code.
 
 ### Features
 
