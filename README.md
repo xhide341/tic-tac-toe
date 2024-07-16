@@ -26,4 +26,4 @@ Here is a short summary of the Tic-Tac-Toe game:
 
 ## What I Learned
 
-I learned about the use of module pattern to organize the code. Using module pattern is a good practice for making single objects that have their public methods and private properties. Basically just like a class in Java, but without the need for a constructor.
+I learned about the use of module pattern to organize the code through encapsulation. Using module pattern is a good practice for making single objects that have their public methods and private properties. Basically just like a class in Java, but without the need for a constructor.
