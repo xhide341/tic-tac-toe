@@ -130,14 +130,14 @@ const gameBoard = (function () {
         }
         resetBoard();
         roundWinner.innerText = `${winner === 'x' ? player1Name : player2Name} wins!`;
-        roundNumber.innerText = `Round ${roundNumber.innerText + 1}`;
+        roundNumber.innerText = parseInt(roundNumber.innerText) + 1;
         roundDialog.showModal();
     };
 
     const announceDraw = () => {
         roundWinner.innerText = "It's a draw!";
         tieTurnScore.innerText =  parseInt(tieTurnScore.innerText) + 1;
-        roundNumber = parseInt(roundNumber.innerText) + 1;
+        roundNumber.innerText = parseInt(roundNumber.innerText) + 1;
         resetBoard();
         roundDialog.showModal();
     };
