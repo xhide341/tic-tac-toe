@@ -1,4 +1,4 @@
-# Calculator Project
+# Tic-Tac-Toe Project
 
 Live preview: https://xhide341.github.io/tic-tac-toe/
 
