@@ -59,7 +59,6 @@ const gameBoard = (function () {
         cells[row * 3 + col].textContent = currentPlayer;
         cells[row * 3 + col].classList.add('active');
         cells[row * 3 + col].classList.remove('empty');
-        cells[row * 3 + col].style.fontSize = '5rem';
         checkGameEnd();
         switchPlayer();
     };
