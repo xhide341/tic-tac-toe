@@ -86,6 +86,7 @@ h1 {
     transition: transform 0.1s ease, background-color 0.3s ease;
     margin: 0;
     font-size: clamp(3rem, 8vw, 5rem);
+    color: black;
 }
 
 .cell:hover {
