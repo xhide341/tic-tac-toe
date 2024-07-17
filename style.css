@@ -61,8 +61,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 90vw;
-    height: 90vw;
+    width: 90dvw;
+    height: 90dvh;
     max-width: 600px;
     max-height: 600px;
     margin: 20px auto;
@@ -85,7 +85,7 @@ h1 {
     border: 1px solid black;
     transition: transform 0.1s ease, background-color 0.3s ease;
     margin: 0;
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(2rem, 3rem, 5rem);
     color: black;
 }
 
